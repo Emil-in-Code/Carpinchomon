@@ -1,7 +1,7 @@
 let ataqueJugador
 let ataqueRival
-let vidasJugador = 3
-let vidasRival = 3
+let vidasJugador = 3;
+let vidasRival = 3;
 
 function iniciarjuego() {
     let sectionSeleccionarAtaque = document.getElementById("seleccionar-ataque")
