@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>¡Carpinchomon!</title>
+        <script src="./js/carpinchomon.js"></script>
+       <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section id="seleccionar-carpincho">
+            <h1 class="titulo">¡Carpinchomon!</h1>
+
+            <h2>Los chetos se apropiaron de tu territorio, atácalos 
+                y recupera lo que te pertenece wacho.</h2>
+
+            <h3 class="subtitulo">Elije tu carpincho: </h3>
+            
+            <div class="tarjetas">
+                <input type="radio" name="carpincho" id="Nativus"/>
+                <label class="tarjeta-de-carpinchomon" for="Nativus">
+                    <p>Nativus</p>
+                    <img src="./assets/Nativus en blanco.png" alt="Nativus">
+                </label>
+                
+                <input type="radio" name="carpincho" id="Norcheto"/>
+                <label class="tarjeta-de-carpinchomon" for="Norcheto">
+                    <p>Norcheto</p>
+                    <img src="./assets/norcheto en blanco.png" alt="Norcheto">
+                </label>
+             
+                <input type="radio" name="carpincho" id="Carpi420"/>
+                <label class="tarjeta-de-carpinchomon" for="Carpi420">     
+                    <p>Carpi420</p>
+                    <img src="./assets/carpi420.png" alt="Carpi420">
+                </label>
+                
+            </div>
+           
+            <button id="boton-carpincho">seleccionar</button>
+        </section>
+
+        <section id="seleccionar-ataque">  
+            <h1 class="titulo">¡Carpinchomon!</h1>
+            
+            <h2 class="subtitulo">Selecciona tu ataque: </h3>
+
+            <div> 
+                <button id="boton-fuego" class="boton-de-ataque"> Fuego🔥</button>
+                <button id="boton-agua" class="boton-de-ataque" > agua 💧</button>
+                <button id="boton-tierra" class="boton-de-ataque"> tierra🌱</button>
+            </div>
+
+            <div>
+                <section id="mensaje">
+                </section>
+
+                <div id="resultado"></div>
+                <div id="ataques-del-jugador"></div>
+                <div id="ataques-del-enemigo"></div>
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">reiniciar</button>
+                </section>
+            </div>
+
+            <div>
+                <p>Tu carpincho <span id="carpincho-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                <p>El carpincho rival <span id="carpincho-rival"></span> tiene <span id="vidas-rival">3</span> vidas</p>
+            </div>
+        </section>                 
+    </body>
+</html>
