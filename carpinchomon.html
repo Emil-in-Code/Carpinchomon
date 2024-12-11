@@ -3,35 +3,39 @@
     <head>
         <meta charset="utf-8"/>
         <title>¡Carpinchomon!</title>
-        <script src="./js/carpinchomon.js"></script>
-       <link rel="stylesheet" href="./styles.css">
+
+       <link rel="stylesheet" href="/csscarpinchomon/styles.css">
     </head>
     <body>
         <section id="seleccionar-carpincho">
             <h1 class="titulo">¡Carpinchomon!</h1>
 
             <h2>Los chetos se apropiaron de tu territorio, atácalos 
-                y recupera lo que te pertenece wacho.</h2>
+                y recupera lo que te pertenece wacho.
+            </h2>
 
             <h3 class="subtitulo">Elije tu carpincho: </h3>
             
             <div class="tarjetas">
-                <input type="radio" name="carpincho" id="Nativus"/>
+                
                 <label class="tarjeta-de-carpinchomon" for="Nativus">
+                    <input type="radio" name="carpincho" id="Nativus"/>
                     <p>Nativus</p>
-                    <img src="./assets/Nativus en blanco.png" alt="Nativus">
+                    <img src="/assets/nativus.jpg" alt="Nativus">
                 </label>
                 
-                <input type="radio" name="carpincho" id="Norcheto"/>
+                
                 <label class="tarjeta-de-carpinchomon" for="Norcheto">
+                    <input type="radio" name="carpincho" id="Norcheto"/>
                     <p>Norcheto</p>
-                    <img src="./assets/norcheto en blanco.png" alt="Norcheto">
+                    <img src="/assets/norcheto.jpg" alt="Norcheto">
                 </label>
              
-                <input type="radio" name="carpincho" id="Carpi420"/>
-                <label class="tarjeta-de-carpinchomon" for="Carpi420">     
+               
+                <label class="tarjeta-de-carpinchomon" for="Carpi420">  
+                    <input type="radio" name="carpincho" id="Carpi420"/>   
                     <p>Carpi420</p>
-                    <img src="./assets/carpi420.png" alt="Carpi420">
+                    <img src="/assets/carpi420.jpg" alt="Carpi420">
                 </label>
                 
             </div>
@@ -66,6 +70,8 @@
                 <p>Tu carpincho <span id="carpincho-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
                 <p>El carpincho rival <span id="carpincho-rival"></span> tiene <span id="vidas-rival">3</span> vidas</p>
             </div>
-        </section>                 
+        </section>        
+        
+        <script src="/jscarpinchomon/carpinchomon.js"></script>
     </body>
 </html>

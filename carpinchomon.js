@@ -12,6 +12,7 @@ function iniciarjuego() {
 
     let botonCarpinchoJugador = document.getElementById("boton-carpincho")
     botonCarpinchoJugador.addEventListener("click", seleccionCarpinchoJugador)
+    alert("seleccionaste al bicho");
 
     let botonFuego = document.getElementById("boton-fuego")
     botonFuego.addEventListener("click", ataqueFuego)
@@ -24,6 +25,7 @@ function iniciarjuego() {
 } 
 
 function seleccionCarpinchoJugador(){  
+    
     let sectionSeleccionarCarpincho = document.getElementById("seleccionar-carpincho")
     sectionSeleccionarCarpincho.style.display = "none"
     let sectionSeleccionarAtaque = document.getElementById("seleccionar-ataque")
