@@ -58,7 +58,7 @@ function seleccionCarpinchoRival(){
         spanCarpinchoRival.innerHTML = "Nativus"
     } else if (seleccionAleatoria == 2){
         spanCarpinchoRival.innerHTML = "Norcheto"
-    } else if (seleccionAleatoria == 3){
+    } else{
         spanCarpinchoRival.innerHTML = "Carpi420"
     }
 }
