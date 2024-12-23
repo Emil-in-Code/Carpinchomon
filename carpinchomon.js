@@ -8,7 +8,7 @@ function iniciarjuego() {
     sectionSeleccionarAtaque.style.display = "none"
 
     let sectionReiniciar = document.getElementById("reiniciar")
-    sectionReiniciar.style.display = "block"
+    sectionReiniciar.style.display = "none"
 
     let botonCarpinchoJugador = document.getElementById("boton-carpincho")
     botonCarpinchoJugador.addEventListener("click", seleccionCarpinchoJugador)
@@ -41,14 +41,12 @@ function seleccionCarpinchoJugador(){
     } else if (inputCarpi420.checked){
         spanCarpinchoJugador.innerHTML = "Carpi420"
     } else {
-        alert("Debes seleccionar un carpincho para continuar")
+        alert ("Debes seleccionar un carpincho para continuar")
     }
-
-    let botonTierra = document.getElementById("boton-carpincho")
-    botonTierra.disabled = true
 
     seleccionCarpinchoRival()
 }
+
 
 function seleccionCarpinchoRival(){
     let seleccionAleatoria = aleatorio (1,3)
@@ -94,7 +92,7 @@ function ataqueAleatorioRival(){
 
 function combate(){
     let spanVidasJugador = document.getElementById("vidas-jugador")
-    let spanVidasRival =document.getElementById("vidas-rival")
+    let spanVidasRival = document.getElementById("vidas-rival")
 
     if(ataqueRival == ataqueJugador) {
         crearMensaje("EMPATE")
