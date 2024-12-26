@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@1,300&family=Rajdhani:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+@font-face {
+    font-family: "keepCalm";
+    src: url(/tipografias/KeepCalm-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Baron Neue";
+    src: url(/tipografias/Baron\ Neue\ Bold.otf) format("opentype");
+}
 
 body {
-    font-family: 'Exo 2', sans-serif;
-   /* background-color: #539165*/
-   background-color: #85FFBD;
-background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-
+    background-color:  #000;
+    min-height: 100vh;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 #seleccionar-carpincho {
-    display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,47 +25,57 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 .titulo{
-    color: #130d5e;
-    font-size: 60px;
-    font-family: 'Rajdhani', sans-serif;
+    color:  rgba(255, 206, 6, 1);
+    font-size: 80px;
+    font-family: Baron Neue;
+}
+
+h2{
+    font-size: 20px;
+    font-family: KeepCalm;
+    color: #ffffff;
 }
 
 
 .subtitulo {
     font-size: 20px;
+    font-family: KeepCalm;
+    color: #ffffff;
 }
 
 .tarjetas {
     display: flex;
-    gap: 10px;
-
+    gap: 20px;
+    
 }
 
-.tarjeta-de-carpinchomon {
-    width: 181px;
-    height: 116px;
-    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );   padding: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
+.card-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
+    flex-direction: column;
+    border-radius:  rgba(255, 206, 6, 1);
 }
 
 .tarjeta-de-carpinchomon img {
-    width: 90px;
+    width: 190px;
     cursor: pointer;
+    
+}
+
+.nombre-carpincho {
+    font-size: 30px;
+    color:  rgba(255, 206, 6, 1);
 }
 
 #boton-carpincho {
-    width: 120px;
-    height: 27px;
-    border-radius: 20px;
-    background: transparent;
-    border: 2px solid;
+    color: #ffffff;
+    font-family: KeepCalm;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: transparent;
+    width: 100px;
+    border-color: rgba(255, 206, 6, 1);
     margin-top: 20px;
-    font-family: 'Roboto Mono', monospace;
     cursor: pointer;
 }
 
@@ -72,15 +90,30 @@ input{
 }
 
 .boton-de-ataque {
-    font-family: 'Roboto Mono', monospace;
+    font-family: KeepCalm;
     box-sizing: border-box;
-    border-radius: 28px;
+    border-radius: 7px;
     padding: 10px;
-    background-color: #b415c9;
+    background-color:  rgba(255, 206, 6, 1);
     width: 100px;
+    border-color: #ffffff;
 }
 
+#boton-reiniciar {
+    color: #ffffff;
+    font-family: KeepCalm;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: transparent;
+    width: 100px;
+    border-color: rgba(255, 206, 6, 1);
+    margin-top: 20px;
+}
 
+p {
+    color: #ffffff;
+}
 
 /*body {
     font-family: 'Russo One', sans-serif;
