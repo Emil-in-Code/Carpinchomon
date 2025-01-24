@@ -125,19 +125,21 @@ function revisarVidas(){
     }
 }
 
+
+
+
 function crearMensaje(resultado){
-    let sectionMensaje = document.getElementById("resultado")
-    let ataquesDelJugador = document.getElementById("ataques-del-jugador")
-    let ataquesDelEnemigo = document.getElementById("ataques-del-enemigo")
+    let sectionMensaje = document.getElementById("resultado");
+    let ataquesDelJugador = document.getElementById("ataques-del-jugador");
+    let ataquesDelEnemigo = document.getElementById("ataques-del-enemigo");
+
+    sectionMensaje.innerHTML =  resultado;
+    nuevoAtaqueDelJugador.innerHTML = ataquesDelJugador;
+    nuevoAtaqueDelEnemigo.innerHTML = ataquesDelEnemigo;
 
    /* let notificacion = document.createElement("p")
     let nuevoAtaqueDelJugador = document.createElement("p")
     let nuevoAtaqueDelEnemigo = document.createElement("p")*/
-
-    sectionMensaje.innerHTML =  resultado
-    nuevoAtaqueDelJugador.innerHTML = ataquesDelJugador
-    nuevoAtaqueDelEnemigo.innerHTML = ataquesDelEnemigo
-
 
     /*sectionMensaje.appendChild(notificacion)
     ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
