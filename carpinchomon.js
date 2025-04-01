@@ -125,26 +125,45 @@ function revisarVidas(){
     }
 }
 
-
-
-
 function crearMensaje(resultado){
     let sectionMensaje = document.getElementById("resultado");
     let ataquesDelJugador = document.getElementById("ataques-del-jugador");
     let ataquesDelEnemigo = document.getElementById("ataques-del-enemigo");
 
-    sectionMensaje.innerHTML =  resultado;
-    nuevoAtaqueDelJugador.innerHTML = ataquesDelJugador;
-    nuevoAtaqueDelEnemigo.innerHTML = ataquesDelEnemigo;
+    sectionMensaje.innerHTML = resultado; // Mostrar el resultado del ataque
 
-   /* let notificacion = document.createElement("p")
-    let nuevoAtaqueDelJugador = document.createElement("p")
-    let nuevoAtaqueDelEnemigo = document.createElement("p")*/
+    let notificacion = document.createElement("p");
+    notificacion.innerHTML = "Nuevo ataque realizado"; // Mensaje informativo
 
-    /*sectionMensaje.appendChild(notificacion)
-    ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
-    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)*/
+    let nuevoAtaqueDelJugador = document.createElement("p");
+    let nuevoAtaqueDelEnemigo = document.createElement("p");
+
+    nuevoAtaqueDelJugador.innerHTML = "Ataque del jugador"; // Personaliza este texto
+    nuevoAtaqueDelEnemigo.innerHTML = "Ataque del enemigo";
+
+    sectionMensaje.appendChild(notificacion);
+    ataquesDelJugador.appendChild(nuevoAtaqueDelJugador);
+    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo);
 }
+
+
+/*function crearMensaje(resultado){
+    let sectionMensaje = document.getElementById("resultado");
+    let ataquesDelJugador = document.getElementById("ataques-del-jugador");
+    let ataquesDelEnemigo = document.getElementById("ataques-del-enemigo");
+
+    sectionMensaje.innerHTML =  resultado;
+    ataquesDelJugador.innerHTML = "ataquesDelJugador";
+    ataquesDelEnemigo.innerHTML = "ataquesDelEnemigo";
+
+    let notificacion = document.createElement("p")
+    let nuevoAtaqueDelJugador = document.createElement("p")
+    let nuevoAtaqueDelEnemigo = document.createElement("p")
+
+    sectionMensaje.appendChild(notificacion)
+    ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
+    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
+}*/
 
 function crearMensajefinal(resultadoFinal){
     let sectionMensaje = document.getElementById("resultado")
