@@ -35,6 +35,7 @@ h2{
     font-size: 20px;
     font-family: KeepCalm;
     color: #ffffff;
+    text-align:center;
 }
 
 
@@ -86,6 +87,7 @@ h2{
     width: 100px;
     border-color:  rgba(117,170,219);
     margin-top: 20px;
+    margin-bottom:3rem;
     cursor: pointer;
 }
 
@@ -97,6 +99,22 @@ input{
 #seleccionar-ataque {
     flex-direction: column;
     align-items: center;
+}
+
+.ataques-container{
+  width: 200px;
+  display: flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:1rem;
+  text-align:center;
+}
+
+#ataques-del-jugador{
+  background-color:red;
+}
+#ataques-del-enemigo{
+  background-color:blue;
 }
 
 .boton-de-ataque {

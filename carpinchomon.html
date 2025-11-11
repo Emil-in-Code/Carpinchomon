@@ -1,85 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>¡Carpinchomon!</title>
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <section id="seleccionar-carpincho">
-            <h1 class="titulo">¡CARPINCHOMON!</h1>
+  <head>
+      <meta charset="utf-8"/>
+      <title>¡Carpinchomon!</title>
+      <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <section id="seleccionar-carpincho">
+      <h1 class="titulo">¡CARPINCHOMON!</h1>
+      <h2>Los chetos se apropiaron de tu territorio,<br>
+        atácalos 
+        y recupera lo que te pertenece wacho.
+      </h2>
 
-            <h2>Los chetos se apropiaron de tu territorio, atácalos 
-                y recupera lo que te pertenece wacho.
-            </h2>
-
-            <h3 class="subtitulo">Elegí tu carpincho: </h3>
-            
-            <div id="tarjetas">
-                
-                
-                <div class="card-container">
-                    <label class="tarjeta-de-carpinchomon" for="Nativus">
-                    <input type="radio" name="carpincho" id="Nativus"/>
-                    <p class="nombre-carpincho">Nativus</p>
-                    <img src="/assets/nativus.jpeg" alt="Nativus">
-                    </label>
-                </div>
-                
-                
-                <div class="card-container">
-                    <label class="tarjeta-de-carpinchomon" for="Norcheto">
-                        <input type="radio" name="carpincho" id="Norcheto"/>
-                        <p class="nombre-carpincho">Norcheto</p>
-                        <img src="/assets/norcheto.jpeg" alt="Norcheto">
-                    </label>
-                </div>
-             
-               
-                <div class="card-container">
-                    <label class="tarjeta-de-carpinchomon" for="Carpi420">  
-                        <input type="radio" name="carpincho" id="Carpi420"/>   
-                        <p class="nombre-carpincho">Carpi420</p>
-                        <img src="/assets/carpi420.jpeg" alt="Carpi420" class="imagen-carpincho">
-                    </label>
-                </div>
-                
-            </div>
+      <h3 class="subtitulo">Elegí tu carpincho: </h3>
+       
+      <div id="tarjetas">
            
-            <button id="boton-carpincho">seleccionar</button>
-        </section>
-
-        <section id="seleccionar-ataque">  
-            <h1 class="titulo">¡Carpinchomon!</h1>
-            
-            <h2 class="subtitulo">Selecciona tu ataque: </h2>
-
-            <div class="button-container"> 
-                <button id="boton-fuego" class="boton-de-ataque"> Fuego🔥</button>
-                <button id="boton-agua" class="boton-de-ataque" > agua 💧</button>
-                <button id="boton-tierra" class="boton-de-ataque"> tierra🌱</button>
-            </div>
-
-            <div id="container__mensaje--reinciar">
-
-                <div id="mensaje">
-                    <p id="resultado">Mucha suerte wachx</p>
-                
-                    <section id="reiniciar">
-                        <button id="boton-reiniciar">reiniciar</button>
-                    </section>
-
-                </div>
-            </div>
-
-            <div>
-                <div id="ataques-del-jugador"></div>
-                <div id="ataques-del-enemigo"></div>
-                <p>Tu carpincho <span id="carpincho-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-                <p>El carpincho rival <span id="carpincho-rival"></span> tiene <span id="vidas-rival">3</span> vidas</p>
-            </div>
-        </section>        
+        <div class="card-container">
+          <label class="tarjeta-de-carpinchomon" for="Nativus">
+          <input type="radio" name="carpincho" id="Nativus"/>
+          <p class="nombre-carpincho">Nativus</p>
+          <img src="/assets/nativus.jpeg" alt="Nativus">
+          </label>
+        </div>
         
-        <script src="/jscarpinchomon/carpinchomon.js"></script>
-    </body>
+        <div class="card-container">
+          <label class="tarjeta-de-carpinchomon" for="Norcheto">
+            <input type="radio" name="carpincho" id="Norcheto"/>
+            <p class="nombre-carpincho">Norcheto</p>
+            <img src="/assets/norcheto.jpeg" alt="Norcheto">
+          </label>
+        </div>
+        
+        <div class="card-container">
+          <label class="tarjeta-de-carpinchomon" for="Carpi420">  
+            <input type="radio" name="carpincho" id="Carpi420"/>   
+            <p class="nombre-carpincho">Carpi420</p>
+            <img src="/assets/carpi420.jpeg" alt="Carpi420" class="imagen-carpincho">
+          </label>
+        </div>
+          
+      </div>
+      <button id="boton-carpincho">seleccionar</button>
+    </section>
+
+    <section id="seleccionar-ataque">  
+      <h1 class="titulo">¡Carpinchomon!</h1>
+      <h2 class="subtitulo">Selecciona tu ataque: </h2>
+
+      <div class="button-container"> 
+        <button id="boton-fuego" class="boton-de-ataque"> Fuego🔥</button>
+        <button id="boton-agua" class="boton-de-ataque" > agua 💧</button>
+        <button id="boton-tierra" class="boton-de-ataque"> tierra🌱</button>
+      </div>
+
+        <div id="mensaje">
+          <p id="resultado">Mucha suerte wachx</p>
+          <section id="reiniciar">
+              <button id="boton-reiniciar">reiniciar</button>
+          </section>
+        </div>
+
+      <div class= "ataques-container">
+        <div id="ataques-del-jugador">Vos</div>
+        <div id="ataques-del-enemigo">Rival</div>
+      </div>
+        <p>Tu carpincho <span id="carpincho-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+        <p>El carpincho rival <span id="carpincho-rival"></span> tiene <span id="vidas-rival">3</span> vidas</p>
+    </section>        
+      
+    <script src="/jscarpinchomon/carpinchomon.js"></script>
+  </body>
 </html>
