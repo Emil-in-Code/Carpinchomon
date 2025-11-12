@@ -76,15 +76,15 @@ function seleccionCarpinchoRival(){
 }
 
 function ataqueFuego(){
-  ataqueJugador = "FUEGO"
+  ataqueJugador = "FUEGO 🔥"
   ataqueAleatorioRival()
 }
 function ataqueAgua(){
-  ataqueJugador = "AGUA"
+  ataqueJugador = "AGUA 💧"
   ataqueAleatorioRival()
 }
 function ataqueTierra(){
-  ataqueJugador = "TIERRA"
+  ataqueJugador = "TIERRA 🌱"
   ataqueAleatorioRival()
 }
 
@@ -92,11 +92,11 @@ function ataqueAleatorioRival(){
   let ataqueAleatorio = aleatorio(1,3)
 
   if (ataqueAleatorio == 1) {
-      ataqueRival = "FUEGO"
+      ataqueRival = "FUEGO 🔥"
   } else if (ataqueAleatorio == 2) {
-      ataqueRival = "AGUA"
+      ataqueRival = "AGUA 💧"
   } else if (ataqueAleatorio == 3) { 
-      ataqueRival = "TIERRA"
+      ataqueRival = "TIERRA 🌱 "
   } 
   combate()
 } 
@@ -153,41 +153,23 @@ function crearMensaje(resultado){
 }
 
 
-/*function crearMensaje(resultado){
-    let sectionMensaje = document.getElementById("resultado");
-    let ataquesDelJugador = document.getElementById("ataques-del-jugador");
-    let ataquesDelEnemigo = document.getElementById("ataques-del-enemigo");
-
-    sectionMensaje.innerHTML =  resultado;
-    ataquesDelJugador.innerHTML = "ataquesDelJugador";
-    ataquesDelEnemigo.innerHTML = "ataquesDelEnemigo";
-
-    let notificacion = document.createElement("p")
-    let nuevoAtaqueDelJugador = document.createElement("p")
-    let nuevoAtaqueDelEnemigo = document.createElement("p")
-
-    sectionMensaje.appendChild(notificacion)
-    ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
-    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
-}*/
-
 function crearMensajefinal(resultadoFinal){
-    let sectionMensaje = document.getElementById("resultado")
+  let sectionMensaje = document.getElementById("resultado")
+  sectionMensaje.innerHTML = resultadoFinal;
+  /*let parrafo = document.createElement("p")
+  parrafo.innerHTML = resultadoFinal
 
-    let parrafo = document.createElement("p")
-    parrafo.innerHTML = resultadoFinal
+  sectionMensaje.appendChild(parrafo)*/
 
-    sectionMensaje.appendChild(parrafo)
-
-    let botonFuego = document.getElementById("boton-fuego")
-    botonFuego.disabled = true
-    let botonAgua = document.getElementById("boton-agua")
-    botonAgua.disabled = true
-    let botonTierra = document.getElementById("boton-tierra")
-    botonTierra.disabled = true
-    
-    let sectionReiniciar = document.getElementById("reiniciar")
-    sectionReiniciar.style.display = "block"
+  let botonFuego = document.getElementById("boton-fuego")
+  botonFuego.disabled = true
+  let botonAgua = document.getElementById("boton-agua")
+  botonAgua.disabled = true
+  let botonTierra = document.getElementById("boton-tierra")
+  botonTierra.disabled = true
+  
+  let sectionReiniciar = document.getElementById("reiniciar")
+  sectionReiniciar.style.display = "block"
 } 
 
 function reiniciarJuego(){
