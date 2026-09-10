@@ -105,7 +105,7 @@ function combate(){
   let spanVidasJugador = document.getElementById("vidas-jugador")
   let spanVidasRival = document.getElementById("vidas-rival")
 
-  if(ataqueRival == ataqueJugador) {
+  if(ataqueRival === ataqueJugador) {
       crearMensaje("EMPATE")
   } else if(ataqueJugador == "FUEGO" && ataqueRival == "TIERRA"){
       crearMensaje("GANASTE") 
